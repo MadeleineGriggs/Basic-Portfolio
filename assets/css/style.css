@@ -1,0 +1,20 @@
+:root {
+    --teal-color: #4aaaa5;
+    --regular-font-color: #777777;
+    --main-header-bg: #ffffff;
+    --main-header-border: #cccccc;
+    --footer-background: #666666;
+    --content-background: #ffffff;
+    --content-border: #dddddd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+
+   color: var(--regular-font-color);
+}
