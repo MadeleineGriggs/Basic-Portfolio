@@ -14,7 +14,19 @@
     box-sizing: border-box;
 }
 
-p {
+h1 {
+    color: var(--main-header-bg);
+    background-color: var(--teal-color);
+}
 
+h2 {
+    color: var(--teal-color);
+}
+
+nav a {
+    color: var(--regular-font-color);
+}
+
+p {
    color: var(--regular-font-color);
 }
