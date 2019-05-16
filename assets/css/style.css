@@ -71,6 +71,8 @@ nav a {
     float: right;
     margin-top: 30px;
     color: var(--content-border);
+    background-color: var(--content-border);
+    border: 0;
 }
 
 p {
@@ -94,7 +96,8 @@ p {
 .footer p {
     color: var(--main-header-border);
     font-size: 0.8em;
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 5px;
 }
 
 .main-content-wrapper {
@@ -194,25 +197,25 @@ input[type=submit] {
 }
 
 .images-wrapper {
-    padding: 20px;
     width: auto;
     height: 100%;
 }
 
 .image-container {
     float: left;
-    padding: 20px;
+    margin: 20px;
     position: relative;
 }
+
 
 h3 {
     font-family: 'Georgia', Times, Times New Roman, serif;
     text-align: center;
     color: var(--main-header-bg);
     background-color: var(--teal-color);
+    width: 100%;
     position: absolute;
-    bottom: 17%;
+    bottom: 10%;
     padding-top: 5px;
     padding-bottom: 5px;
-    width: 200px;
 }
