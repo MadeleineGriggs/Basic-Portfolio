@@ -3,6 +3,7 @@
 
 :root {
     --teal-color: #4aaaa5;
+    --dark-teal: #397f7b;
     --regular-font-color: #777777;
     --main-header-bg: #ffffff;
     --main-header-border: #cccccc;
@@ -38,7 +39,38 @@ nav {
     margin: auto;
 }
 
+nav a {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: var(--regular-font-color);
+    float: right;
+    padding: 30px;
+    text-decoration: none;
+}
 
+nav a:hover {
+    transition: all 1s;
+    text-decoration: underline var(--teal-color);
+    color: var(--teal-color);
+}
+.nav-wrapper hr {
+    width: 1px;
+    height: 20px;
+    display: inline;
+    float: right;
+    margin-top: 30px;
+    color: var(--content-border);
+    background-color: var(--content-border);
+    border: 0;
+}
+
+.main-content-wrapper {
+    width: 960px;
+    margin-top: 30px;
+    background-color: var(--content-background);
+    border: 1px solid var(--content-border);
+    margin-left: auto;
+    margin-right: auto;
+}
 
 h1 {
     font-family: 'Georgia', Times, Times New Roman, serif;
@@ -54,25 +86,6 @@ h2 {
     color: var(--teal-color);
     font-size: 30px;
     padding: 20px;
-}
-
-nav a {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: var(--regular-font-color);
-    float: right;
-    padding: 30px;
-    text-decoration: none;
-}
-
-.nav-wrapper hr {
-    width: 1px;
-    height: 20px;
-    display: inline;
-    float: right;
-    margin-top: 30px;
-    color: var(--content-border);
-    background-color: var(--content-border);
-    border: 0;
 }
 
 p {
@@ -100,14 +113,7 @@ p {
     margin-bottom: 5px;
 }
 
-.main-content-wrapper {
-    width: 960px;
-    margin-top: 30px;
-    background-color: var(--content-background);
-    border: 1px solid var(--content-border);
-    margin-left: auto;
-    margin-right: auto;
-}
+
 
 /*-------About page specific styling----------*/
 
@@ -156,6 +162,13 @@ input[type=text], input[type=email] {
     border: 1px solid var(--content-border);
 }
 
+input[type=text]:hover, input[type=text]:focus, input[type=email]:hover, input[type=email]:focus, textarea:hover, textarea:focus {
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px var(--teal-color);
+    transition: 1s;
+    outline-color: var(--teal-color);
+}
+
 textarea {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: var(--regular-font-color);
@@ -184,6 +197,11 @@ input[type=submit] {
     margin: 10px 20px 20px 20px;
 }
 
+input[type=submit]:hover {
+    background: var(--dark-teal);
+    transition: 0.5s;
+}
+
 /*-------Portfolio page specific styling------*/
 
 .portfolio-content-wrapper {
@@ -207,8 +225,17 @@ input[type=submit] {
     position: relative;
 }
 
+.desaturate {
+    filter: grayscale(100%);
+}
 
-h3 {
+.desaturate:hover {
+    filter: grayscale(0%);
+    transition: 2s;
+    transition-timing-function: ease;
+}
+
+.image-container a {
     font-family: 'Georgia', Times, Times New Roman, serif;
     text-align: center;
     color: var(--main-header-bg);
@@ -218,4 +245,11 @@ h3 {
     bottom: 10%;
     padding-top: 5px;
     padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.image-container a:hover {
+    background-color: var(--dark-teal);
+    transition: 1s;
+    transition-timing-function: ease-in-out;
 }
